@@ -14,17 +14,41 @@ class Mountains {
   }
 }
 
-class Cloud {
-  constructor() {
-    this.x = random(width);
-    this.y = random(height);
-    this.density = random(8) + 2;
+class Clouds {
+  constructor(horizon) {
+    this.one_top = random(height / horizon);
+    this.one_bot = random(height / horizon);
+    this.two_top = random(height / horizon);
+    this.two_bot = random(height / horizon);
+
+    this.three_left = random(height / horizon);
+    this.three_right = random(height / horizon);
+
   }
-  display() {
-    for (let i = 0; i < this.density; i++) {
-      translate(this.x + random() - 0.5, this.y + random() - 0.5);
-      circle(0, 0, random(30));
+  display(cloud_color) {
+    fill(cloud_color);
+    noStroke();
+    if (frameCount % 10 == 0) {
+      this.one_top += random() - 0.5;
+      this.one_bot += random() - 0.5;
+      this.two_top += random() - 0.5;
+      this.two_bot += random() - 0.5;
+      this.three_left += random() - 0.5;
+      this.three_right += random() - 0.5;
     }
+    beginShape();
+    vertex(0, this.one_top);
+    vertex(width, this.two_top);
+    vertex(width, this.two_bot);
+    vertex(0, this.one_bot);
+    endShape(CLOSE);
+
+    beginShape();
+    vertex(0, height / horizon);
+    vertex(0, this.three_left);
+    vertex(width, this.three_right);
+    vertex(width, height / horizon);
+    endShape(CLOSE);
   }
 }
 
