@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #fd765e;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.sunset-image {
+  background: url("sunset-crop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: auto 100%;
+  position: bottom;
+  height: 100vh;
+  width: 100vw;
+}
+
+#mc_embed_signup {
+  border-radius: 25px;
+  padding-top: 1px;
+  background: #fff;
+  clear: left;
+  font: 10px Helvetica, Arial, sans-serif;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
