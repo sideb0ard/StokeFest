@@ -1,8 +1,18 @@
+@font-face {
+  font-family: JoseFin;
+  src: url(fonts/josefin_sans/JosefinSans-VariableFont_wght.ttf);
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   background-color: #fd765e;
+
+  font-family: JoseFin, Georgia, serif;
+  font-size: 120%;
+  font-weight: bold;
+  color: #f9e591;
 }
 
 .content {
@@ -10,6 +20,28 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.maintext {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+}
+
+.maintext p {
+  margin: 25px;
+}
+
+.maintext h1 {
+  margin: 25px;
+}
+
+.maintext h2 {
+  margin: 25px;
+}
+
+.maintext iframe {
+  width: 100%;
 }
 
 .header img {
@@ -37,4 +69,14 @@ html {
   width: 600px;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.partners {
+  display: flex;
+  margin: 4px;
+}
+
+.partners img {
+  width: 25%;
+  height: 100%;
 }
