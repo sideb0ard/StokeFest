@@ -7,12 +7,10 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #fd765e;
-
   font-family: JoseFin, Georgia, serif;
   font-size: 120%;
-  font-weight: bold;
-  color: #f9e591;
+  background-color: #f47660;
+  color: #f4e48d;
 }
 
 .content {
@@ -22,42 +20,220 @@ html {
   justify-content: center;
 }
 
-.maintext {
+.header {
   width: 100%;
-  max-width: 950px;
   margin: auto;
-}
-
-.maintext p {
-  margin: 25px;
-}
-
-.maintext h1 {
-  margin: 25px;
-}
-
-.maintext h2 {
-  margin: 25px;
-}
-
-.maintext iframe {
-  width: 100%;
-}
-
-.header img {
-  width: 100%;
-  height: auto;
+  background-color: #ffffff;
+  color: #f47660;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sunset-image {
-  background: url("sunset-crop.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  background-color: #f47660;
+  color: #f4e48d;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
-  background-size: auto 100%;
-  position: bottom;
-  height: 100vh;
-  width: 100vw;
+.sunset-image img {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+@media screen and (min-width: 901px) {
+  ul.headr {
+    font-size: 120%;
+  }
+
+  html {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ul.headr {
+    font-size: 15px;
+  }
+
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  ul.headr {
+    font-size: 10px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
+
+
+ul.headr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.headr img {
+  max-width: 200px;
+}
+
+ul.headr li {
+  padding: 4px 16px;
+}
+
+ul.headr li:hover {
+  background-color: #f47660;
+}
+
+ul.headr li:hover a {
+  color: #f4e48d;
+}
+
+ul.headr a {
+  text-decoration: none;
+  color: #f47660;
+}
+
+ul.headr a:hover {
+  color: #f4e48d;
+}
+
+.maintext {
+  width: 100%;
+  margin: auto;
+  background-color: #fff9df;
+  color: #000000;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.maintext-whitebackground {
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  color: #f4e48d;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+.maintext div {
+  max-width: 950px;
+}
+
+.maintext p {
+  margin: auto;
+  max-width: 950px;
+  padding-top: 10px;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+}
+
+.listicle {
+  text-align: center;
+  margin: auto;
+  max-width: 850px;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+}
+
+.listicle ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+
+.maintext h1 {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+}
+
+.maintext h2 {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+  padding-top: 30px;
+}
+
+.maintext h3 {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+  padding-top: 30px;
+}
+
+.maintext table {
+  margin: auto;
+  max-width: 950px;
+  padding-top: 10px;
+  text-align: center;
+  padding-right: min(50px, 10%);
+  padding-left: min(50px, 10%);
+}
+
+.maintext table td img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.embeddy {
+  text-align: center;
+  margin: auto;
+  border: 10px;
+}
+
+div#mc_embed_shell {
+  text-align: center;
+  margin: auto;
+  border: 10px;
+}
+
+.maintext iframe {
+  margin: auto;
+  width: 100%;
+  max-width: 950px;
+}
+
+iframe.gfm-embed-iframe {
+  height: 250px;
+}
+
+.checkout {
+  color: #f47660;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.sosh {
+  max-width: 100px;
+  padding: 10px;
 }
 
 #mc_embed_signup {
@@ -71,12 +247,32 @@ html {
   margin-top: 40px;
 }
 
-.partners {
+.centrrr {
   display: flex;
   margin: 4px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.partners img {
-  width: 25%;
+.centrrr a {
+  text-decoration: none;
+}
+
+img.sponz {
+  max-width: 100%;
   height: 100%;
+}
+
+.sponz {
+  display: flex;
+  margin: 4px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.spitem {
+  flex-basis: 100%;
+  text-align: center;
 }
